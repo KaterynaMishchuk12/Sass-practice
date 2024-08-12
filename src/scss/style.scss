@@ -1,26 +1,3 @@
-
 @use "reset";
-
-
-.badge{
-    display: inline-block;
-    min-width: 96px;
-    padding: 4px 8px;
-
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    text-align: center;
-    letter-spacing: 0.07px;
-    color: #ffffff;
-    border-radius: 20px;
-}
-.badge-completed{
-    background-color: #a461dB;
-}
-.badge-ended{
-    background-color: #fc5a5a;
-}
-.badge-active{
-    background-color: #82c43c;
-}
+@use "base/base";
+@use "components/badge";
