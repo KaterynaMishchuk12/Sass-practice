@@ -1,19 +1,35 @@
-.page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
+@use "../utilities/mixin";
 
-  min-height: 100vh;
-
-  font-family: sans-serif;
-  background-color: #292932;
+html {
+  font-size: 8px;
+  @include mixin.viewport-md {
+    font-size: 10px;
+  }
+}
+body {
+  font-family: "Montserrat";
+  background-color: var();
+  color: var();
+  font-size: 2.4rem;
+  // transition: background 0.2s ease, color 0.2s ease;
 }
 
-.page-title {
-  font-size: 96px;
-  font-weight: 600;
-  color: #fafafb;
-  margin-bottom: 50px;
-}
+// .page {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   gap: 50px;
+
+//   min-height: 100vh;
+
+//   font-family: sans-serif;
+//   background-color: #292932;
+// }
+
+// .page-title {
+//   font-size: 96px;
+//   font-weight: 600;
+//   color: #fafafb;
+//   margin-bottom: 50px;
+// }
