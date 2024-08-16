@@ -7,18 +7,75 @@
     <title>Lesson 05</title>
   </head>
   <body>
-    <section class="section">
-      <h1 class="title">Page title</h1>
-      <p class="text">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit esse,
-        nulla aperiam ducimus quaerat eligendi! Ipsa ipsam ullam rem error
-        dolor? At natus expedita ut eum nulla dolor deserunt dicta!
-      </p>
-    </section>
-    <button class="small-btn" type="button">
-      <svg class="button-icon"></svg>
-      <span class="button-label">Замовити</span>
-    </button>
+    <div class="notificaton notification-primary">
+      <svg class="notificaton-icon" width="20" height="20">
+        <use href="./src/img/icons/icon-primary.svg"></use>
+      </svg>
+
+      <p class="notification-text">Primary</p>
+
+      <button class="notification-btn" aria-label="Close button">
+        <svg class="notificaton-btn-icon" width="16" height="16">
+          <use href="./src/img/icons/close.svg"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="notificaton notification-success">
+      <svg class="notificaton-icon" width="20" height="20">
+        <use href="./src/img/icons/icon-check.svg"></use>
+      </svg>
+
+      <p class="notification-text">Success</p>
+
+      <button class="notification-btn" aria-label="Close button">
+        <svg class="notificaton-btn-icon" width="16" height="16">
+          <use href="./src/img/icons/close.svg"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="notification-danger">
+      <svg class="notificaton-icon" width="20" height="20">
+        <use href="./src/img/icons/icon-check.svg"></use>
+      </svg>
+
+      <p class="notification-text">Danger</p>
+
+      <button class="notification-btn" aria-label="Close button">
+        <svg class="notificaton-btn-icon" width="16" height="16">
+          <use href="./src/img/icons/close.svg"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="notification-warning">
+      <svg class="notificaton-icon" width="20" height="20">
+        <use href="./src/img/icons/icon-check.svg"></use>
+      </svg>
+
+      <p class="notification-text">Warning</p>
+
+      <button class="notification-btn" aria-label="Close button">
+        <svg class="notificaton-btn-icon" width="16" height="16">
+          <use href="./src/img/icons/close.svg"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="notification-info">
+      <svg class="notificaton-icon" width="20" height="20">
+        <use href="./src/img/icons/icon-check.svg"></use>
+      </svg>
+
+      <p class="notification-text">Info</p>
+
+      <button class="notification-btn" aria-label="Close button">
+        <svg class="notificaton-btn-icon" width="16" height="16">
+          <use href="./src/img/icons/close.svg"></use>
+        </svg>
+      </button>
+    </div>
 
     <script type="module" src="./src/js/main.js"></script>
   </body>
