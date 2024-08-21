@@ -1,0 +1,20 @@
+// Function statement
+@use "sass:math";
+
+@function strip-unit($value) {
+  @if type-of($value) == "number" and not unitless($value) {
+    $result: $value * 0;
+    @debug $result;
+
+    $result: $result + 1;
+    @debug $result;
+
+    @return math.div($value, ($value * 0 + 1));
+  }
+
+  @return $value;
+}
+
+@function rem($px-value, $base-font-size: 16px) {
+  @return #{math.div(strip-unit($px-value), strip-unit($base-font-size))}rem;
+}
